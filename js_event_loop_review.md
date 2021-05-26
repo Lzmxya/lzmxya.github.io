@@ -1,3 +1,4 @@
+# JavaScript 的事件循環是什麼？
 ## 工欲善其事，必先利其器
 通常來講，JavaScipt 必須仰賴執行環境（Runtime environment）以執行，最常見的環境當屬「網頁瀏覽器」。
 
