@@ -39,6 +39,7 @@
         * 當**堆疊**被很慢的任務佔住了，就可稱「阻塞」
 
     * 但 JavaScript 通常是非阻塞的，看看這個例子：
+
     ```javascript
     console.log("A");
 
