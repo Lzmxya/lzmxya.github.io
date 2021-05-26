@@ -117,8 +117,8 @@ console.log("C");
 前陣子進行期中專題，便深刻體悟到 jQuery 提供的 AJAX 的非同步的特性。當時為了實現即時查詢空房，將無房可用的日期傳送給日期選擇器（使該日反灰），而使用了 AJAX 取得指定條件（房型、人數）下的空房資料。然由於觸發查詢的事件亦同時觸發展開日期選擇器，因此**回傳的資料總是慢選擇器半拍**；雖然拿到資料了，但選擇器哪會回頭讀取？於是日期一直無法變灰。最後是加上 ```async: false``` 才得以解決，但這樣便「阻塞」了堆疊，不是個很好的做法，但也許是必要之惡？「（轉圈圈圖示）正在載入…」大概就是用在此處…
 
 ## 參考資料
-* [Philip Roberts, JSConf EU. (2014). 所以說event loop到底是什麼玩意兒？](https://youtu.be/8aGhZQkoFbQ)
-* [MDN contributors. (2021). 並行模型和事件循環](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/EventLoop)
-* [Gbadebo Bello. (2021). How does the Event Loop works in JavaScript?](https://geekflare.com/javascript-event-loops)
-* [Daniel. (2019). The JavaScript runtime environment](http://dolszewski.com/javascript/javascript-runtime-environment)
-* [Sam. (2019). JS 同步、異步、阻塞、非阻塞](https://medium.com/@mts40110/js-%E5%90%8C%E6%AD%A5-%E7%95%B0%E6%AD%A5-%E9%98%BB%E5%A1%9E-%E9%9D%9E%E9%98%BB%E5%A1%9E-29e1e1c0193e)
+1. [Philip Roberts, JSConf EU. (2014). 所以說event loop到底是什麼玩意兒？](https://youtu.be/8aGhZQkoFbQ)
+2. [MDN contributors. (2021). 並行模型和事件循環](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/EventLoop)
+3. [Gbadebo Bello. (2021). How does the Event Loop works in JavaScript?](https://geekflare.com/javascript-event-loops)
+4. [Daniel. (2019). The JavaScript runtime environment](http://dolszewski.com/javascript/javascript-runtime-environment)
+5. [Sam. (2019). JS 同步、異步、阻塞、非阻塞](https://medium.com/@mts40110/js-%E5%90%8C%E6%AD%A5-%E7%95%B0%E6%AD%A5-%E9%98%BB%E5%A1%9E-%E9%9D%9E%E9%98%BB%E5%A1%9E-29e1e1c0193e)
