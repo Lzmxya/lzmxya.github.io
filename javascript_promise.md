@@ -91,8 +91,6 @@ function finalCountdown(sec) {
 
 > 實務上，使用 catch 捕捉被否決的 promise 較理想的，而不建議使用兩個引數 then 語法……（後略）
 
-我想其原因是出於程式碼之可閱讀性。
-
 ## 更接近人話——async function
 ES7 推出了新的「async function」，其目的是為了將非同步函式的編排寫得像是同步函式般。async function 是基於 Promise 的語法裝飾，因此，要寫一個 async function，必須先建構一個 Promise 物件。而任意的 Promise 都可被改寫為 async function 的形式，使之看起來更簡單。我們將剛剛建立的 Promise「
 ```finalCountdown()```」改以 async function 來執行：
