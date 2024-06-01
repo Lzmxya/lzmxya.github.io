@@ -1,0 +1,4 @@
+baseURL = "https://lzmxya.github.io"
+languageCode = "zh-Hant"
+title = "blog.lzmxya"
+theme = "hugo-bearblog"
